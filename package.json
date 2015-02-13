@@ -1,0 +1,22 @@
+{
+  "name": "shnappy-model",
+  "version": "0.0.1",
+  "description": "Shnappy's model",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "nodeunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appmechanix/shnappy-model.git"
+  },
+  "author": "dwnz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appmechanix/shnappy-model/issues"
+  },
+  "homepage": "https://github.com/appmechanix/shnappy-model",
+  "dependencies": {
+    "mongoose": "^3.8.23"
+  }
+}
