@@ -8,6 +8,8 @@ console.log(User);
 exports.test_that_can_connect = function (test) {
     User.find(function (err, data) {
         test.notEqual(null, data);
+        mongoose.disconnect();
+
         test.done();
     });
 };
