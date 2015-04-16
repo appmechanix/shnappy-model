@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/appmechanix/shnappy-model",
   "dependencies": {
-    "mongoose": "^3.8.23",
+    "mongoose": "^4.0.1",
     "node-uuid": "^1.4.2"
   }
 }
