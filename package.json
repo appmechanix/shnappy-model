@@ -1,6 +1,6 @@
 {
   "name": "shnappy-model",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "Shnappy's model",
   "main": "lib/index.js",
   "scripts": {
