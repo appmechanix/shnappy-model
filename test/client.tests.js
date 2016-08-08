@@ -25,7 +25,7 @@ exports.check_that_non_expired_client_is_valid = function (test) {
 exports.check_that_half_saved_expiry_is_valid = function (test) {
     var client = new model.Client();
     client.expires = true;
-    
+
     test.equal(false, client.HasExpired());
 
     test.done();
@@ -40,6 +40,23 @@ exports.check_that_expired_client_is_invalid = function (test) {
     client.expiresOn = d;
 
     test.equal(true, client.HasExpired());
+
+    test.done();
+};
+
+exports.check_that_cover_design_css_is_valid_when_no_value = function (test) {
+    var client = new model.Client();
+
+    test.equal('cover--standard', client.CoverDesignCSS());
+
+    test.done();
+};
+
+exports.check_that_cover_design_css_is_valid_when_has_value = function (test) {
+    var client = new model.Client();
+    client.coverDesign = 'test';
+
+    test.equal('cover--test', client.CoverDesignCSS());
 
     test.done();
 };
